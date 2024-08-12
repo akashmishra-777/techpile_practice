@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <title>EduMart</title>
+
+    <style>
+        *{
+            margin: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            user-select: none;
+        }
+        #register-button:hover{
+        background-color: green  !important;
+        }
+
+        .contact-details{
+            text-decoration: none;
+        }
+
+        .contact-details:hover{
+            text-decoration: underline;
+           
+        }
+
+        #after-nav-div{
+            background-color: rgb(41, 181, 41);
+            height: 50px;
+        }
+
+        .nav-items{
+            list-style: none;
+            text-decoration: none;
+            color: white;
+           
+           
+        }
+
+        #after-nav-div div ul li{
+           transition: all ease .5s;
+            padding: 8px;
+            border-radius: 7px;
+            width: 80px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        #after-nav-div div ul li:hover{
+            background-color: green;
+            box-shadow: 2px 2px 10px green;
+        }
+
+        #slider{
+                background-color: gray;
+                height: 550px;
+                
+        }
+
+        #slider-1{
+            background-image: url("./slider-1.jpg");
+            height: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        #after-slider{
+            background-color: transparent;
+            height: 500px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: -100px;
+            gap: 20px;
+        }
+
+        .after-slider-div{
+            background-color:#29B529;
+            height: 200px;
+            width:200px;
+            border-radius: 7px;
+            box-shadow: 0px 0px 1px gray;
+            cursor: pointer;
+            transition: all ease-in-out .3s; 
+            border: 2px solid white;
+        }
+
+        .after-slider-div:hover{
+            scale: 1.05;
+        }
+
+
+        #about-us{
+            background-color: black;
+            height: 350px;
+            margin-top: -400px;
+            background-color: #000559;
+            padding-top: 140px;
+        }
+
+        #about-content{
+            background-color:  #000559;
+            display: flex; 
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          
+           
+        }
+
+        #gallary{
+   
+            height: 600px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #gallary div img{
+            width: 300px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        #contact-us{
+            height: 600px;
+            background-color:  #000559;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+        }
+
+        
+
+        
+    </style>
+</head>
+<body>
+    <nav>
+        <div style=" display: flex; justify-content: space-between; align-items: center; padding: 15px;">
+            <div style="width: 50%; display: flex; justify-content: flex-start;">
+                <img style="margin-left: 80px; height: 45px;" src="logo.png" alt="logo not found">
+            </div>
+
+            <div style="display: flex; justify-content: space-evenly ;align-items: center; width: 50%;">
+                <div>
+                   <b> Contact Us</b> <br>
+                   <a class="contact-details" style=" transition: .5s all ease;" href="tel:+91638809667">+916388079667</a>
+                </div>
+                <div>
+                    <b>Mail Us</b> <br> <a style=" transition: .5s all ease;" class="contact-details" href="mailto:akashmishra@gmail.com">akashmishra@gmail.com</a>
+                </div>
+                <button id="register-button" style="padding: 10px; background-color: rgb(10, 176, 10); border-radius: 7px; transition: all ease .3s; color: white; cursor: pointer; border: none; box-shadow: 0px 0px 10px gray;">Register Now</button>
+                
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Navigation Part Completed -->
+
+
+    <div id="after-nav-div">
+        
+        <div style="width: 100%; display: flex; align-items: center; height: 100%; ">
+            <ul style="text-decoration: none; list-style: none; display: flex; justify-content: space-evenly; align-items: center; width: 100%; color: white;">
+                <li style="background-color: green; box-shadow: 2px 2px 10px gray;"><a class="nav-items" href="#">Home</a></li>
+                <li><a class="nav-items" href="#">Courses</a></li>
+                <li><a class="nav-items" href="#">Gallary</a></li>
+                <li><a class="nav-items" href="#">About Us</a></li>
+                <li><a class="nav-items" href="#">Contact Us</a></li>
+                <li><a class="nav-items" href="#">Login</a></li>
+
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- Closing on navigation of the website -->
+
+    <div id="slider">
+            <div id="slider-1"></div>
+            <div id="slider-2"></div>
+            <div id="slider-3"></div>
+            
+    </div>
+
+
+    <!-- Closing of slider -->
+
+    <div id="after-slider">
+        <div class="after-slider-div" style="display: flex; justify-content: center; flex-direction: row; gap:5px; align-items: center; font-size: 24px; color: white; font-weight: 500;">
+            <ion-icon style="font-size: 28px;" name="globe-outline"></ion-icon>
+            Apply Online
+        </div>
+
+        <div class="after-slider-div" style="display: flex; justify-content: center; flex-direction: row; gap:5px; align-items: center; font-size: 24px; color: white; font-weight: 500;">
+            <ion-icon style="font-size: 28px;" name="clipboard-outline"></ion-icon>
+            Services
+        </div>
+
+            <div class="after-slider-div" style="display: flex; justify-content: center; flex-direction: row; gap:5px; align-items: center; font-size: 24px; color: white; font-weight: 500;">
+                <ion-icon style="font-size: 28px; font-weight:400;" name="browsers-outline"></ion-icon>
+                Certificate
+            </div>
+    </div>
+
+
+    <div id="about-us" >
+        <div id="about-content">
+        <div style="">
+            <span style="color: white; font-size: 30px;">About</span> <span style="color: red; font-size: 30px;"> &nbsp;Us</span>
+        </div>
+
+        <div style="width: 80%; text-align: justify; margin-top: 20px; color: rgb(198, 194, 194);">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id veniam rerum voluptatem iusto error nostrum quisquam blanditiis incidunt, minima, quas in doloribus iure consequuntur, vel perferendis quidem sapiente hic repudiandae! Sapiente sequi autem ducimus, mollitia modi eum doloremque facere quasi praesentium corrupti, sunt suscipit temporibus minus dolores reiciendis officiis! Possimus, at veritatis accusamus et ipsam tempora perspiciatis consequuntur maiores beatae nulla enim odit, maxime quaerat dolorem, atque ut earum veniam fugit quia esse quas hic aut. Aperiam nihil sit reiciendis aliquam est velit quasi expedita commodi soluta omnis dolores unde nesciunt pariatur dolorem quam repellat ducimus molestias aliquid cumque numquam, ullam, sint quia? Exercitationem atque voluptas natus, eius tempora voluptatum quaerat recusandae beatae quo reiciendis tempore est rerum, sint neque magni dolore ut sapiente veritatis. Ullam quam eius tempora corrupti fuga facere ipsa mollitia nam alias. Libero quasi dicta veritatis a omnis, officia deleniti nisi at quidem voluptatum delectus ex. Sit cum debitis fuga dolorum quisquam, ab perferendis, odit, non nihil aliquid reiciendis unde aperiam inventore ea! Unde voluptate culpa vel at velit minima doloremque necessitatibus laborum perspiciatis numquam sequi deleniti, porro eligendi cum. Aliquid dolorum, adipisci nobis asperiores modi aspernatur impedit quis nemo eaque ad deserunt neque sapiente sint?
+        </div>
+
+
+       
+
+
+        </div>
+    </div>
+
+     <!-- Closing of about secxtion -->
+     <div id="gallary">
+
+      <div style="display: flex; justify-content: center; margin-top: 20px;">
+        <span style="font-size: 30px; font-weight: 600; color: red; text-align: center;">Gallary</span>
+      </div>
+
+      <div style=" margin-top: 20px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <div style="display: flex; justify-content: center; align-items: center; gap: 20px;">
+            <img style="border: 2px solid black; border-radius: 5px; padding: 5px; box-shadow: 0px 0px 5px inset; " src="gallary-1.jpeg" alt="Image not found">
+            <img style="border: 2px solid black; border-radius: 5px; padding: 5px; box-shadow: 0px 0px 5px inset; " src="gallary-2.jpeg" alt="Image not found">
+            <img style="border: 2px solid black; border-radius: 5px; padding: 5px; box-shadow: 0px 0px 5px inset; " src="gallary-3.jpeg" alt="Image not found">
+        </div>
+    <br>
+        <div style="display: flex; justify-content: center; align-items: center; gap: 20px;">
+            <img style="border: 2px solid black; border-radius: 5px; padding: 5px; box-shadow: 0px 0px 5px inset; " src="gallary-4.jpeg" alt="Image not found">
+            <img  style="border: 2px solid black; border-radius: 5px; padding: 5px; box-shadow: 0px 0px 5px inset; " src="gallary-5.jpeg" alt="Image not found">
+            <img style="border: 2px solid black; border-radius: 5px; padding: 5px; box-shadow: 0px 0px 5px inset; " src="gallary-6.jpeg" alt="Image not found">
+        </div>
+      </div>
+
+
+     </div>
+
+     <div id="contact-us" >
+
+        <div style="display: flex; justify-content: center; padding:20px; flex-direction: column; align-items: center;">
+            <div>
+                <span style="color: white; font-size: 28px; font-weight: 500;">Contact&nbsp;</span><span style="color: red; font-size: 28px; font-weight: 500;">Us</span>
+            </div>
+            
+            <span style="padding: 5px; color:#DCCFC4;">
+                You may contact us by contact number or fill this form any time you need professional support or have any question.
+            </span>
+        </div>
+
+        <div style="display: flex; background-color: rgb(255, 255, 255); width: 50%; justify-content: center; flex-direction: column; padding: 20px; border-radius: 4px; box-shadow: 1px 1px 10px gray;">
+
+            <div style="display: flex; justify-content: space-between; width: 100%;">
+               <div style="display: flex; flex-direction: column; width: 49%;">
+                <label style="margin: 5px; color:black; font-weight: 500; margin-bottom: -2px;"  for="name">Your Name</label>
+                <input style="box-shadow: 0px 0px 2px gray;padding: 10px; margin: 5px; border-radius: 4px ; border: 1px solid gray; outline: none; " min="0"  type="text" id="name" placeholder="Enter your name here.">
+               </div>
+
+               <div style="display: flex; flex-direction: column; width: 49%;">
+                <label style="margin: 5px; color:black; font-weight: 500; margin-bottom: -2px;"  for="contact">Phone Number</label>
+                <input style="box-shadow: 0px 0px 2px gray;padding: 10px; margin: 5px; border-radius: 4px ; border: 1px solid gray; outline: none; " min="0" type="number" id="conatct" placeholder="Enter your contact number here.">
+               </div>
+            </div>
+
+            <div style="display: flex; flex-direction: column; padding: 5px;">
+                <label style="margin: 5px; color:black; font-weight: 500; margin-bottom: -2px;" for="email">Email</label>
+                <input style="box-shadow: 0px 0px 2px gray;padding: 10px; margin: 5px; border-radius: 4px ; border: 1px solid gray; outline: none; " type="email" placeholder="Enter your email address here." required>
+            </div>
+
+            <div style="display: flex; flex-direction: column; padding: 5px;">
+                <label style="margin: 5px; color: black; font-weight: 500; margin-bottom: -2px;" for="text-x">Your Message</label>
+               <textarea name="text-x" cols="10" style="box-shadow: 0px 0px 2px gray;padding: 10px; margin: 5px; border-radius: 4px ; border: 1px solid gray; outline: none; height: 80px; resize: none;" id="text-x" placeholder="Enter your desired message here."></textarea>
+            </div>
+
+            <button style="width: 98%; border-radius: 3px; cursor: pointer; padding: 9px; background-color: #2c36ec; color: white; font-weight: 500; align-self: center;">Send Message</button>
+
+        </div>
+
+     </div>
+
+
+     <div style="background-color: black; color: white; padding: 15px; display: flex; justify-content: center;">
+            &copy; 2024 <span style="color: #5961fb; font-weight: 500;">&nbsp;Team GC&nbsp;</span> 2024 | Developed and designed by <span style="color: #5961fb; font-weight: 500;">&nbsp;Akash Mishra&nbsp;</span>
+     </div>
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
